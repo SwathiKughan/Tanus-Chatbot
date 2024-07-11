@@ -1,0 +1,1880 @@
+html, body {
+    background-color: rgb(30, 25, 37);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+
+
+header {
+    background: #4a00e0;
+    background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: -o-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: -moz-linear-gradient(to right, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: white;
+    padding: 100px 0;
+}
+
+/* Navbar */
+.navbar {
+    padding: 20px 25px;
+    background-image: url(https://angular.envytheme.com/tanus/assets/images/banners/banner-bg2.jpg);
+}
+
+.nav-link {
+    color: white;
+    font-size: large;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: rgb(18, 39, 163);
+}
+
+.nav-item1 {
+    margin-top: 0.2cm;
+}
+
+.nav-link1 {
+    color: white;
+    font-size: large;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 0.3cm 0.5cm;
+    margin-top: 0.5cm;
+    margin-bottom: 1cm;
+}
+
+.nav-link1:hover {
+    text-decoration: none;
+    background-color: rgb(65, 21, 187);
+}
+
+
+/* Landing Page */
+.landing-page {
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/banners/banner-bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px; /* Adjust padding for overall spacing */
+}
+
+.landing-page .col-md-5 {
+    padding: 5cm 0cm; /* Adjust padding for the text column */
+    text-align: left; /* Center align text on smaller screens */
+}
+
+.landing-page .col-md-5 h1{
+    font-size: 60px;
+    text-align: left;
+}
+
+.landing-page .col-md-5 h5 {
+    text-align: left; /* Center align text on smaller screens */
+    color: #9b9b9b;
+
+}
+
+.round-border i {
+    padding: 0.5cm 1cm;
+    margin-left: -1cm;
+}
+.text-col {
+    color: white;
+}
+
+.img-col img {
+    width: 100%; /* Ensure image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is block-level */
+    margin-top: 1cm; /* Add space between text and image */
+    margin-left: 1cm;
+}
+
+.free-trial a {
+    border: 1px solid rgb(109, 25, 189);
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(109, 25, 189);
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px; /* Add space between text and button */
+}
+
+.free-trial a:hover {
+    background-color: white;
+    color: rgb(109, 25, 189);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .landing-page .col-md-5 {
+        padding: 2cm 1cm; /* Reduce padding for smaller screens */
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .img-col img {
+        margin-left: 0; /* Remove left margin on smaller screens */
+        margin-top: 1cm; /* Adjust top margin */
+        
+    }
+
+    .free-trial a {
+        margin-top: 10px; /* Reduce top margin for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .landing-page .col-md-5 {
+        margin-top: 2cm;
+        text-align: left;
+        
+    }    
+    .landing-page .col-md-5 h1,h5,h6{
+        margin-left: -1cm;
+        
+    }
+
+    .free-trial{
+        margin-left: -3cm;
+    }
+
+    .round-border i{
+        margin-left: -3cm;
+        padding: 0.2cm 1cm;
+        text-align: left;
+    }
+
+    .landing-page .col-md-5 h1{
+        font-size: 34px;
+        text-align: left;
+    }
+    .img-col img {
+        margin-left: -1cm;
+        margin-top: -8cm;
+    }
+}
+
+/* Partner Section */
+.partner {
+    padding-top: 2cm; /* Adjust padding for overall spacing */
+    padding-bottom: 2cm; /* Adjust padding for overall spacing */
+    background-color: rgb(39, 9, 73);
+    text-align: center; /* Center align text for all screen sizes */
+}
+
+.img-partner {
+    display: flex;
+    justify-content: center; /* Center align images */
+    flex-wrap: wrap; /* Allow images to wrap to next line if needed */
+    padding: 0 20px; /* Adjust horizontal padding */
+}
+
+.img-partner img {
+    height: auto;
+    max-width: 100%; /* Ensure images are responsive and scale proportionally */
+    margin: 20px; /* Add spacing between images */
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 992px) {
+    .partner {
+        padding-top: 80px; /* Reduce padding for tablets */
+        padding-bottom: 120px; /* Reduce padding for tablets */
+    }
+
+    .img-partner {
+        padding: 0 10px; /* Reduce horizontal padding for tablets */
+    }
+
+    .img-partner img {
+        max-width: 50%; /* Resize images to fit two images per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .partner {
+        padding-top: 60px; /* Further reduce padding for smaller tablets and large phones */
+        padding-bottom: 100px; /* Further reduce padding for smaller tablets and large phones */
+    }
+
+    .img-partner img {
+        max-width: 100%; /* Resize images to full width for smaller tablets and large phones */
+    }
+}
+
+@media (max-width: 576px) {
+    .partner {
+        padding-top: 40px; /* Minimal padding for mobile phones */
+        padding-bottom: 80px; /* Minimal padding for mobile phones */
+    }
+
+    .partner h6{
+        margin-left:0.5cm
+    }
+}
+
+/* About Page */
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure elements are evenly spaced */
+    background-image: url(https://angular.envytheme.com/tanus/assets/images/bg-images/bg-shape5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2cm;
+    
+}
+
+.texting-col {
+    padding-left: 4cm;
+    padding-top: 2cm;
+    padding-bottom: 3cm;
+    color: white;
+}
+
+.text2-col {
+    padding-top: 2cm;
+    padding-bottom: 3cm;
+    color: white;
+    margin-right: 1cm;
+}
+
+.why {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.why-title {
+    color: white;
+    font-size: 2rem;
+}
+
+.highlight {
+    color: blueviolet;
+}
+
+.inv-sol {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1.5cm;
+    margin-top: 1cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+}
+
+.inv-sol h4 {
+    flex: 1;
+}
+
+.inv-sol img {
+    height: 3cm;
+    width: 3cm;
+    margin-left: 6cm ;
+}
+
+.inv-sol p {
+    flex: 2;
+    margin-left: 5cm;
+}
+
+.inv-sol {
+    background-image: url(https://angular.envytheme.com/tanus/assets/images/shapes/shape5.png);
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+    padding: 1.5cm;
+    margin-top: 1cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+}
+
+.inv-sol h4 {
+    flex: 1;
+}
+
+.inv-sol img {
+    height: 3cm;
+    width: 3cm;
+    margin-left: 6cm;
+}
+
+.inv-sol p {
+    flex: 2;
+    margin-left: 5cm;
+}
+
+/* Media query for screens with width 750px and below */
+@media (max-width: 750px) {
+    .inv-sol {
+        flex-direction: column;
+        padding: 1cm;
+        margin-left: 2cm;
+        margin-right: 2cm;
+        text-align: center;
+    }
+
+    .inv-sol img {
+        margin: 1cm 0;
+        height: 2.5cm;
+        width: 2.5cm;
+    }
+
+    .inv-sol p {
+        margin-left: 0;
+    }
+
+    .why-title {
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Media query for screens with width 576px and below */
+@media (max-width: 576px) {
+    .inv-sol {
+        padding: 0.5cm;
+        margin-left: 0.5cm;
+        margin-right: 1cm;
+        width: 8cm;
+    }
+
+    .inv-sol h4 {
+        font-size: 1.2rem;
+    }
+
+    .inv-sol img {
+        height: 2cm;
+        width: 2cm;
+    }
+
+    .inv-sol p {
+        font-size: 0.9rem;
+    }
+
+    .why-title {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 1cm;
+    }
+}
+
+
+.video {
+    position: relative;
+    display: inline-block;
+    border-radius: 10%;
+    overflow: hidden;
+    padding: 2cm 8cm;
+    padding-bottom: 0cm; /* Adjust to control border width */
+}
+
+.video img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 35px solid;
+    border-color: rgb(26, 6, 48);
+    border-radius: 15px;
+    position: relative;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .texting-col, .text2-col {
+        padding-left: 2cm;
+        padding-right: 2cm;
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .texting-col img{
+        margin-left: -0.6cm;
+    }
+
+    
+}
+
+@media (max-width: 576px) {
+    .about .row{
+        margin-right: 0.6cm;
+    }
+    .about .row h4{
+        margin-right: 0.6cm;
+        font-size: 17px;
+        margin-right: 0.6cm;
+    }
+    .texting-col, .text2-col {
+        padding-left: 0.5cm;
+        padding-right: 0.5cm;
+        padding-top: 0.5cm;
+        padding-bottom: 1cm;
+        margin-left:1cm
+    }
+
+    .texting-col img{
+        margin-left: -0.4cm;
+        
+    }
+
+
+    .texting-col, .text2-col h5{
+        font-size: 14px;
+    }
+    
+        .slider-text{
+        width: 100%;
+        right: -0.25cm;
+    }
+    .video {
+        padding: 1cm 1cm;
+        align-items: center;
+        margin-left: 0.5cm;
+    }
+}
+
+
+/* Default styles for large screens */
+.features{
+    text-align: center;
+    color: white;
+    padding-top: 3cm;
+  }
+
+.row1{
+    padding: 2cm 5cm;
+    text-align: left;
+    
+  }
+
+.single-features-box {
+    border: 1px solid #ddd;
+    padding: 1cm 1cm;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(154, 15, 235, 0.1);
+    background-color: black;
+  }
+.single-features-box p{
+  color: grey;
+  }
+.row1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5cm; /* Half the gap to compensate for child padding */
+  }
+
+.col-gap {
+    padding: 0.5cm; /* Half the gap on all sides */
+  }
+
+.single-features-box {
+  background: #000000;
+  padding: 20px;
+  border-radius: 5%;
+  box-shadow: 10px 10px 10px rgba(147, 5, 241, 0.1);
+  }
+
+.single-features-box img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  }
+
+.single-features-box h3{
+  color: white; /* Customize text color if needed */
+  }
+
+  .benefits-content {
+    color: white;
+    padding: 0cm 3.5cm;
+    
+}
+
+.benefits-content .sub-title {
+    color: rgb(101, 18, 139);
+    font-weight: bold;
+}
+
+.benefits-content h2 {
+    color: white;
+}
+
+.benefits-content a:hover{
+    background-color: white;
+    color: #17022e;
+}
+
+.default-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(91, 20, 206);
+    margin-top: 10px;
+}
+
+
+.benefits-list .item {
+    margin-bottom: 20px;
+}
+
+.benefits-list .icon img{
+    width: 3cm;
+    height: 3cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    padding: 0.6cm 0.6cm;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.benefits-list h3 {
+    color: white;
+}
+
+.benefits-list p {
+    color:gray;
+}
+
+.benefits-content .image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -30px;
+    padding-left:6cm;
+}
+
+
+
+/* Media queries for smaller screens */
+@media (max-width: 1024px) {
+    .row1 {
+        padding: 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .single-features-box {
+        width: 100%; /* Full width on smaller screens */
+        margin: 1rem 0; /* Adjust margin for spacing */
+    }
+
+    .benefits-content {
+        padding: 0 2rem; /* Adjust padding for smaller screens */
+    }
+
+    .benefits-list .icon img {
+        width: 2.5rem; /* Adjust icon size for smaller screens */
+        height: 2.5rem;
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .single-features-box,
+    .benefits-content {
+        padding: 1rem; /* Further adjust padding for very small screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .feature-text {
+        text-align: center;
+    }
+    .single-features-box {
+        
+        height: 11cm;
+        width: 9cm;
+        margin-left: -0.5cm;
+    }
+
+    .single-features-box img {
+        width: 6cm;
+        height: 5cm;
+        margin-left: 1cm;
+    }
+
+    .benefits-list{
+        margin-left: 0.5cm;
+    }
+    .benefits-content img{
+        width: 4cm;
+        height: 5cm;
+        margin-left: 1cm;
+        
+    }
+    .benefits-content {
+        padding: 0 1rem; /* Minimal padding for smallest screens */
+    }
+}
+
+
+/* Testimonials */
+.testimonial-section {
+    text-align: center;
+    padding: 2cm 5cm;
+    background-image: url(https://angular.envytheme.com/tanus/assets/images/bg-images/bg-image5.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border: 1px solid rgb(34, 2, 34);
+    border-radius: 15px;
+    margin: 2cm 1.5cm;
+    color: white;
+}
+
+.testimonial-section h1 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.testimonial-section h1 span {
+    color: #6e1eb8;
+    font-weight: bold;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #17022e;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    color: white;
+    margin: 10px;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.testimonial-header h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.testimonial-header p {
+    margin: 0;
+    color: #9b9b9b;
+}
+
+.testimonial p {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating span {
+    color: #ffd700;
+    font-size: 18px;
+}
+
+.rating p {
+    margin: 0;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .testimonial-section {
+        padding: 2cm 2cm;
+    }
+
+    .testimonial {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .testimonial-section {
+        padding: 2cm 0cm;
+        width: 8cm;
+        margin-left: 1cm;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .testimonial h5{
+        margin-left: 0.5cm;
+        text-align: center;
+        margin-right: -0.5cm;
+    }
+}
+
+
+/* Case Studies */
+
+.case-studies {
+    padding: 2cm 1cm;
+}
+
+.case-studies h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+.case-studies .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0cm 1.5cm;
+}
+
+.case-studies .col-md-6, .case-studies .col-md-5 {
+    flex: 1;
+    max-width: 100%;
+    padding: 1cm;
+    box-sizing: border-box;
+}
+
+.case-studies .col-md-5 img {
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+}
+
+.case-studies .col-md-3 {
+    flex: 1;
+    max-width: 100%;
+    padding: 0cm 0.4cm;
+    text-align: left;
+    margin-bottom: 1cm;
+}
+
+.case-studies .col-md-3 h2 {
+    text-align: left;
+    color: gray;
+}
+
+.case-studies .col-md-3 h4 {
+    text-align: left;
+    color: white;
+}
+
+.case-studies .col-md-3 hr {
+    color: gray;
+}
+
+.case-studies .col-md-3 a {
+    text-decoration: none;
+}
+
+.case-studies .col-md-3 h2:hover {
+    color: rgb(170, 223, 46);
+}
+
+.case-study-link {
+    text-decoration: none;
+    color: gray;
+}
+
+.case-study-link.active {
+    color: rgb(170, 223, 46);
+}
+
+.case-study-link h2 {
+    display: inline-block;
+    margin: 0;
+}
+
+.case-study-link h2.active {
+    color: green;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .case-studies {
+        padding: 2cm 1cm;
+    }
+
+    .case-studies .row {
+        padding: 1cm 1cm;
+    }
+
+    .case-studies .col-md-5 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .case-studies {
+        padding: 1cm 0.5cm;
+    }
+
+    .case-studies h6{
+        margin-left: 0.1cm;
+    }
+
+    .case-studies .row {
+        padding: 1cm 0.5cm;
+    }
+
+    .case-studies .col-md-5 img {
+        width: 8cm;
+        height: 5cm;
+        margin-left: -1cm;
+    }
+
+    .case-studies .col-md-3{
+        margin-top: -1cm;
+    }
+    .case-study-link{
+        padding: 0cm 2.5cm;
+        
+    }
+}
+/* Subscribe */
+
+.subscribe-box {
+    background-color: #15022e;
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/bg-images/bg-shape3.png");
+    border: 1px solid #ddd;
+    padding: 1cm 1cm;
+    margin: 3cm 6cm;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(154, 15, 235, 0.1);
+}
+
+.subscribe .col-md-8 {
+    padding: 2cm 0cm;
+    text-align: center;
+    margin-left: -1cm;
+}
+
+.subscribe .col-md-8 input {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #15022e;
+    height: 1.5cm;
+    width: 14cm;
+    margin-top: 0.5cm;
+}
+
+.subscribe .col-md-8 button {
+    background-color: rgb(55, 9, 107);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    height: 1.55cm;
+    width: 4cm;
+    margin-left: -0.5cm;
+    color: white;
+}
+
+.subscribe .col-md-8 button:hover {
+    background-color: white;
+    color: #15022e;
+}
+
+.subscribe .col-md-8 h1 {
+    color: #7000d9;
+}
+
+.subscribe .col-md-8 h3 {
+    color: white;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .subscribe-box {
+        margin: 2cm 3cm;
+        padding: 1cm 0.5cm;
+    }
+
+    .subscribe .col-md-8 input {
+        width: 10cm;
+    }
+
+    .subscribe .col-md-8 button {
+        width: 3.5cm;
+    }
+}
+
+/* Small screens (mobiles, 576px and up) */
+@media (max-width: 768px) {
+    .subscribe-box {
+        margin: 1cm 1.5cm;
+        padding: 0.5cm 0.5cm;
+    }
+
+    .subscribe .col-md-8 {
+        padding: 1cm 0cm;
+        margin-left: 0;
+    }
+
+    .subscribe .col-md-8 input {
+        width: 8cm;
+        height: 1.2cm;
+    }
+
+    .subscribe .col-md-8 button {
+        width: 5cm;
+        height: 1.3cm;
+        margin-left: 0;
+    }
+}
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 576px) {
+    .subscribe-box {
+        margin: 0.5cm 0.5cm;
+        padding: 0.5cm 0.5cm;
+    }
+
+    .subscribe .col-md-8 input {
+        width: 8cm;
+        height: 1.5cm;
+    }
+
+    .subscribe .col-md-8 button {
+        width: 3.5cm;
+        height: 1.2cm;
+        margin-left: 0;
+        margin-top: 0.5cm;
+    }
+}
+
+/* Pricing Plan */
+
+.container {
+    margin-bottom: 2cm;
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/bg-images/bg-shape7.png");
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.pricing-plans {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-plan {
+    background-color: #11022e;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(154, 15, 235, 0.1);
+    height: fit-content;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+    color: #ddd;
+    width: 8cm;
+    margin: 10px;
+}
+
+.plan h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.plan .price {
+    font-size: 48px;
+    font-weight: bold; 
+    margin-bottom: -2cm;
+}
+
+.plan .price span {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.plan .features ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan .features h5 {
+    font-size: 16px;
+    margin-left: -1cm;
+}
+
+.plan .features li {
+    font-size: smaller;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.get-button {
+    padding-left: 2.5cm;
+    margin-top: -1cm;
+}
+
+.plan .features li::before {
+    content: '•';
+    color: #007bff;
+    margin-right: 5px;
+}
+
+.plan .button {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plan .button:hover {
+    background-color: #7000d9;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .pricing-plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-plan {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+/* Small screens (mobiles, 576px and up) */
+@media (max-width: 768px) {
+    .container {
+        margin-bottom: 1cm;
+    }
+
+    .box-plan {
+        width: 100%;
+        margin: 10px 0;
+        
+    }
+
+    .plan .price {
+        font-size: 36px;
+    }
+
+    .plan .price span {
+        font-size: 16px;
+    }
+
+    .plan .features li {
+        font-size: smaller;
+    }
+
+    .get-button {
+        padding-left: 1cm;
+        margin-top: 1cm;
+    }
+}
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 576px) {
+    .container {
+        margin-bottom: 1cm;
+    }
+
+    .box-plan {
+        width: 100%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .plan .price {
+        font-size: 32px;
+    }
+
+    .plan .price span {
+        font-size: 14px;
+    }
+
+    .plan .features li {
+        font-size: smaller;
+    }
+
+    .get-button {
+        padding-left: 0;
+        text-align: center;
+        margin-top: -1cm;
+    }
+}
+
+/* CHATBOT INTEGRATIONS */
+
+.row-2 {
+    
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2cm 4cm;
+}
+
+.col-lg-6 {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content h5 {
+    margin-bottom: 10px;
+    color: grey;
+    text-align: left;
+}
+
+.text-content h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .row-2 {
+        padding: 2cm 2cm;
+    }
+
+    .text-content h1 {
+        font-size: 1.5em;
+    }
+
+    .image-content img {
+        max-width: 90%;
+    }
+}
+
+/* Small screens (mobiles, 576px and up) */
+@media (max-width: 768px) {
+    .row-2 {
+        padding: 1.5cm 1cm;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-lg-6 {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 1.2em;
+    }
+
+    .image-content img {
+        max-width: 80%;
+    }
+}
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 576px) {
+    .row-2 {
+        padding: 1cm 0cm;
+        margin-left: 1.5cm;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        font-size: 150%;
+    }
+
+    .row-2 h1{
+        text-align: left;
+        margin-left: -1cm;
+        padding-right: 2cm;
+        
+    }
+    
+    .row-2 h5{
+        font-size: 70%;
+    }
+    .col-lg-6 {
+        padding: 5px;
+        width: 100%;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .text-content h1 {
+        font-size: 1em;
+    }
+
+    .image-content img {
+        max-width: 70%;
+        margin-left: -3cm;
+        margin-top: 0.5cm;
+    }
+}
+
+/* Accordion */
+.accordion1 {
+    overflow: hidden;
+    padding: 2cm 6cm;
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/bg-images/bg-shape3.png");
+    background-repeat: no-repeat;
+}
+
+.accordion1 h5 {
+    color: rgb(76, 13, 134);
+    text-align: center;
+}
+
+.accordion1 h1 {
+    color: white;
+    text-align: center;
+    text-wrap: center;
+    padding: 0.5cm 8cm;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #2e2e2e;
+    margin-bottom: 15px; /* Adds space between each accordion item */
+    border-radius: 10px;  /* Ensures the border radius is visible */
+    overflow: hidden;  /* Ensures the border radius is visible */
+}
+
+.accordion-item h2 button {
+    padding: 0.6cm 0.5cm;
+    font-size: large;
+    color: white;
+}
+
+.accordion-item:last-child {
+    border-bottom: 0;
+}
+
+.accordion-header {
+    margin: 0;
+    background-color: #2e2e2e; /* Header background always grey */
+    color: white;
+}
+
+.accordion-button {
+    background-color: #2e2e2e; /* Background color of header */
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    position: relative;
+    color: white; /* Text color */
+}
+
+.accordion-button::after {
+    content: '\25BC'; /* Unicode for down arrow */
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    color: blueviolet; /* Arrow color */
+}
+
+.accordion-button:hover,
+.accordion-button:focus {
+    background-color: #2e2e2e; /* Keep grey on hover and focus */
+    color: white;
+}
+
+.accordion-button.collapsed {
+    background-color: #2e2e2e;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #2e2e2e;
+}
+
+.accordion-collapse {
+    border-top: 1px solid #2e2e2e;
+}
+
+.accordion-body {
+    padding: 0.5cm 0.5cm;
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/bg-images/bg-shape3.png"); /* Content background transparent */
+    background-color: rgb(58, 57, 57);
+    color: white;
+     /* Ensure text color is visible */   
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .accordion1 {
+        padding: 2cm 3cm;
+    }
+
+    .accordion1 h1 {
+        padding: 0.5cm 4cm;
+        font-size: 1.5em;
+    }
+}
+
+/* Small screens (mobiles, 576px and up) */
+@media (max-width: 768px) {
+    .accordion1 {
+        padding: 2cm 2cm;
+    }
+
+    .accordion1 h1 {
+        padding: 0.5cm 2cm;
+        font-size: 1.2em;
+    }
+
+    .accordion-button {
+        padding: 0.5cm 0.4cm;
+        font-size: 14px;
+    }
+
+    .accordion-body {
+        padding: 0.4cm 0.4cm;
+    }
+}
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 576px) {
+    .accordion1 {
+        padding: 1cm 1cm;
+    }
+
+    .accordion1 h1 {
+        padding: 0.5cm 1cm;
+        font-size: 1em;
+    }
+
+    .accordion-button {
+        padding: 0.4cm 0.3cm;
+        font-size: 12px;
+    }
+
+    .accordion-body {
+        padding: 0.3cm 0.3cm;
+    }
+}
+
+/* Article */
+.article-box {
+    background-color: #15022e;
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/bg-images/bg-shape3.png");
+    border: 1px solid #ddd;
+    padding: 1cm 1cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(154, 15, 235, 0.1);
+}
+
+.articles {
+    padding: 0.5cm 1cm;
+}
+
+.articles img {
+    width: 10cm;
+    height: 6cm;
+    border-radius: 20px;
+    margin-bottom: 0.5cm;
+    margin-top: 1cm;
+}
+
+.articles h1, .articles h5 {
+    text-align: center;
+    color: white;
+}
+
+.articles h4 {
+    color: white;
+    margin-top: 0.2cm;
+}
+
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .article-box {
+        margin-left: 2cm;
+        margin-right: 2cm;
+    }
+
+    .articles img {
+        width: 8cm;
+        height: 5cm;
+    }
+}
+
+/* Small screens (mobiles, 576px and up) */
+@media (max-width: 768px) {
+    .article-box {
+        margin-left: 1cm;
+        margin-right: 1cm;
+    }
+
+    .articles img {
+        width: 100%;
+        height: auto;
+    }
+
+    .articles h1 {
+        font-size: 1.5em;
+    }
+
+    .articles h4 {
+        font-size: 1em;
+    }
+}
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 576px) {
+    .article-box {
+        margin-left: -1.5cm;
+        margin-right: -1.5cm;
+        
+    }
+
+    .articles img {
+        width: 100%;
+        height: auto;
+    }
+
+    .articles h1 {
+        font-size: 1.2em;
+    }
+
+    .articles h4 {
+        font-size: 0.9em;
+    }
+
+    .articles h6{
+        margin-left: 0.1cm;
+    }
+}
+
+/* Form */
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-section {
+    flex: 1;
+}
+
+.text-section h5 {
+    color: blueviolet;
+    text-align: left;
+}
+
+.text-section h1 {
+    font-size: 2em;
+    margin: 20px 0;
+    text-align: left;
+    color: white;
+}
+
+.text-section h2 {
+    color: orange;
+}
+
+.contact-form {
+    width: 800px;
+    margin: 100px;
+    padding: 2cm 2cm;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-image: url("https://angular.envytheme.com/tanus/assets/images/bg-images/bg-image6.jpg");
+    background-color: #f9f9f9;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+}
+
+.form-group .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.form-group .icon img {
+    height: 20px;
+    width: auto;
+}
+
+.form-group .input-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-group .button-container {
+    text-align: right;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.outside-image {
+    text-align: right;
+    padding-right: 60px; /* Adjust padding */
+    margin-top: -170px;
+}
+
+.outside-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjustments for layout */
+.form-group.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.form-group.row .input-container {
+    flex: 1; /* Take up equal space */
+    margin-bottom: 10px;
+}
+
+.form-group.row .input-container label {
+    text-align: left; /* Align label text to the right for Name */
+}
+
+.form-group.row .input-container:first-child {
+    text-align: right; /* Align first input container (Name) to the right */
+}
+
+.form-group.row .input-container:last-child {
+    text-align: center; /* Align last input container (Email) to the center */
+}
+
+.form-group.row .input-container input {
+    width: calc(100% - 10px); /* Adjust width of inputs minus margin */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Media queries for responsiveness */
+/* Medium screens (tablets, 768px and up) */
+@media (max-width: 992px) {
+    .contact {
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    .contact-form {
+        width: 100%;
+        margin: 50px 0;
+        padding: 1.5cm;
+    }
+
+    .outside-image {
+        margin-top: 0;
+        padding-right: 0;
+    }
+
+    .text-section h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Small screens (mobiles, 576px and up) */
+@media (max-width: 768px) {
+    .contact {
+        padding: 20px;
+    }
+
+    .text-section h1 {
+        font-size: 1.5em;
+    }
+
+    .text-section h5 {
+        text-align: center;
+    }
+
+    .text-section h1 {
+        text-align: center;
+    }
+
+    .text-section h2 {
+        text-align: center;
+    }
+
+    .contact-form {
+        padding: 1cm 4cm;
+    }
+
+    .outside-image {
+        text-align: center;
+        margin-top: 20px;
+        padding-right: 0;
+    }
+}
+
+/* Extra small screens (less than 576px) */
+@media (max-width: 576px) {
+    .contact {
+        padding: 1cm;
+    }
+
+    .text-section h1 {
+        font-size: 1.2em;
+    }
+
+    .text-section h2 {
+        font-size: 1em;
+    }
+
+    .contact-form {
+        padding: 1cm 0.5cm;
+        margin: 20px 0;
+    }
+
+    .form-group .input-container input,
+    .form-group textarea {
+        padding: 10px 5px;
+    }
+
+    .form-group button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .outside-image {
+        display:flex; /* Hide the outside image on extra small screens */
+        margin-top: -2cm;
+        margin-left: 6.5cm;
+    }
+}
+
+/* Footer */
+.footer {
+    
+    padding: 2cm 4cm;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1cm;
+  }
+  
+  .footer-section h3 {
+    color: white;
+    margin-bottom: 0.5cm;
+  }
+  
+  .footer-section h6 {
+    color: grey;
+    margin-bottom: 0.2cm;
+  }
+  
+  .footer .fa {
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .footer-part {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 1cm 5cm;
+    background-color: #15022e;
+    text-align: center;
+    padding: 0.6cm 0.4cm;
+  }
+  
+  .footer-part h6 {
+    margin: 0;
+    color: gray;
+  }
+  
+  .footer-part h6 b {
+    color: white;
+  }
+  
+  .footer-part h6 span {
+    color: blueviolet;
+  }
+  
+  .footer-part .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  /* Media queries for responsiveness */
+  /* Medium screens (tablets, 768px and up) */
+  @media (max-width: 992px) {
+    .footer {
+      padding: 2cm 2cm;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 1cm;
+      text-align: center;
+    }
+  
+    .footer-part {
+      margin: 1cm 2cm;
+    }
+  }
+  
+  /* Small screens (mobiles, 576px and up) */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1cm 1cm;
+    }
+  
+    .footer-section {
+      margin-bottom: 0.5cm;
+    }
+  
+    .footer-part {
+      margin: 1cm 1cm;
+      padding: 0.5cm;
+    }
+  
+    .footer-part h6 {
+      font-size: 0.9em;
+    }
+  
+    .footer-part .footer-links a {
+      margin: 0 5px;
+    }
+  }
+  
+  /* Extra small screens (less than 576px) */
+  @media (max-width: 576px) {
+    .footer {
+      padding: 1cm 1.5cm;
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 0.5cm;
+      text-align: center;
+    }
+  
+    .footer-part {
+      margin: 0.5cm 0.5cm;
+      padding: 0.4cm;
+    }
+  
+    .footer-part h6 {
+      font-size: 0.8em;
+    }
+  
+    .footer-part .footer-links a {
+      margin: 0 3px;
+    }
+  }
+  
