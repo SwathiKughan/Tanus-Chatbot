@@ -59,6 +59,31 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', handleResize);
 });
 
+window.addEventListener('resize', function() {
+    const testimonialSection = document.querySelector('.testimonial-section');
+    const testimonials = document.querySelectorAll('.testimonial');
+    
+    if (window.innerWidth <= 768) {
+        testimonials.forEach(testimonial => {
+            testimonial.style.width = '90%';
+            testimonial.style.margin = '10px auto';
+        });
+    } else if (window.innerWidth <= 576) {
+        testimonials.forEach(testimonial => {
+            testimonial.style.width = '100%';
+            testimonial.style.margin = '10px auto';
+        });
+    } else {
+        testimonials.forEach(testimonial => {
+            testimonial.style.width = '300px';
+            testimonial.style.margin = '10px';
+        });
+    }
+});
+
+
+
+let currentActiveLink = null;
 
 function changeImage(id) {
     const image = document.getElementById("case-study-image");
@@ -93,11 +118,7 @@ function changeImage(id) {
     activeLink.classList.add('active');
     activeLink.querySelector('h2').classList.add('active');
     currentActiveLink = activeLink;
-    // Trigger resize event on page load to apply initial styles
-window.dispatchEvent(new Event('resize'));
 }
-
-
 
 
 
